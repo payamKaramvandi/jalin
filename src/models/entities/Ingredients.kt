@@ -9,4 +9,5 @@ class Ingredients(id: EntityID<Int>): IntEntity(id){
     companion object : IntEntityClass<Ingredients>(Ingredient)
     var name by Ingredient.name
     var description by Ingredient.description
+    var unit by Ingredient.unit
 }
