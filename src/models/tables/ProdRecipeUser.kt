@@ -6,4 +6,6 @@ object ProdRecipeUser : IntIdTable() {
     val productId = reference("productId", Product)
     val recipeId = reference("recipeId", Recipe)
     val customerId=reference("customerId",Customer)
+    override val primaryKey: PrimaryKey
+        get() = PrimaryKey(productId, recipeId, customerId)
 }
