@@ -1,7 +1,5 @@
-package com.example.com.example.models.tables
+package com.example.models.tables
 
-import com.example.models.tables.Order
-import com.example.models.tables.Product
 import org.jetbrains.exposed.dao.id.IntIdTable
 
 object OrderItem : IntIdTable() {

@@ -1,6 +1,6 @@
 package com.example.models.entities
 
-import com.example.com.example.models.tables.OrderItem
+import com.example.models.tables.OrderItem
 import org.jetbrains.exposed.dao.IntEntity
 import org.jetbrains.exposed.dao.IntEntityClass
 import org.jetbrains.exposed.dao.id.EntityID
