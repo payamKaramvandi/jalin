@@ -9,7 +9,6 @@ import org.jetbrains.exposed.dao.id.EntityID
 class Orders(id: EntityID<Int>) : IntEntity(id) {
     companion object : IntEntityClass<Orders>(Order)
 
-    var customerId by Order.customerId
     var orderDate by Order.orderDate
     var paymentType by Order.paymentType
     var total by Order.total
