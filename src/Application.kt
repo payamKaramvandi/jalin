@@ -1,5 +1,7 @@
 package com.example
 
+import com.example.models.DatabaseFactory
+import com.example.repository.StoreRepository
 import io.ktor.application.*
 import io.ktor.response.*
 import io.ktor.request.*
@@ -27,7 +29,8 @@ fun Application.module(testing: Boolean = false) {
     install(FreeMarker) {
         templateLoader = ClassTemplateLoader(this::class.java.classLoader, "templates")
     }
-
+    DatabaseFactory.init()
+    val db = StoreRepository()
     install(Locations) {
     }
 

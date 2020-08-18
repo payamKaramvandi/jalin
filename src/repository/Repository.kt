@@ -1,5 +1,11 @@
 package com.example.repository
 
-interface Repository {
+import com.example.models.UserModel
 
+interface Repository {
+    suspend fun addUser(email: String,
+                        displayName: String,
+                        passwordHash: String): UserModel?
+    suspend fun findUser(userId: Int): UserModel?
+    suspend fun findUserByEmail(email: String): UserModel?
 }
