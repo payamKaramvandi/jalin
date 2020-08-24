@@ -2,24 +2,21 @@ package com.example
 
 import com.example.models.DatabaseFactory
 import com.example.repository.StoreRepository
+import freemarker.cache.ClassTemplateLoader
 import io.ktor.application.*
-import io.ktor.response.*
-import io.ktor.request.*
-import io.ktor.routing.*
-import io.ktor.http.*
-import io.ktor.html.*
-import kotlinx.html.*
-import kotlinx.css.*
-import freemarker.cache.*
-import io.ktor.freemarker.*
-import io.ktor.locations.*
-import io.ktor.sessions.*
-import io.ktor.features.*
-import org.slf4j.event.*
 import io.ktor.auth.*
-import io.ktor.gson.*
 import io.ktor.client.*
 import io.ktor.client.engine.apache.*
+import io.ktor.features.*
+import io.ktor.freemarker.*
+import io.ktor.gson.*
+import io.ktor.http.*
+import io.ktor.locations.*
+import io.ktor.request.*
+import io.ktor.response.*
+import io.ktor.routing.*
+import io.ktor.sessions.*
+import org.slf4j.event.Level
 
 fun main(args: Array<String>): Unit = io.ktor.server.netty.EngineMain.main(args)
 
